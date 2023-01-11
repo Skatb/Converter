@@ -1,3 +1,7 @@
 .App {
     background-color: teal;
 }
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
