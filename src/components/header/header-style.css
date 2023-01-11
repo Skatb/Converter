@@ -1,5 +1,4 @@
 .header {
-    
 }
 .header__list {
     display: flex;
@@ -10,4 +9,26 @@
 }
 .header__list-item {
     font-size: 20px;
+}
+.header__link-item {
+    color: rgb(38, 35, 35);
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+    position: relative;
+}
+.header__link-item:hover {
+    color: rgb(16, 14, 14);
+}
+.header__link-item::after {
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: #222222;
+    height: 1px;
+    width: 0px;
+}
+.header__link-item:hover::after {
+    width: 100%;
 }
