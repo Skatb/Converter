@@ -4,19 +4,19 @@ import './range.css'
 import RangeChoice from './selectRange/RangeChoice';
 
 const Range = () => {
-    const [inputRange, setInputRange] = useState('0')
+    const [inputRange, setInputRange] = useState('1')
 
     const [selectRange, setRange] = useState('mm')
 
     const choiceRender = () => {
         if (selectRange === 'mm') {
-            return <RangeChoice mm={inputRange * 1} sm={inputRange * 0.1} m={inputRange * 0.001} km={inputRange * 0.000001} />
+            return <RangeChoice mm={(inputRange * 1).toFixed(6)*1} sm={(inputRange * 0.1).toFixed(6)*1} m={(inputRange * 0.001).toFixed(6)*1} km={(inputRange * 0.000001).toFixed(10)*1} />
         } else if (selectRange === 'cm'){
-            return <RangeChoice mm={inputRange * 0.1} sm={inputRange * 1} m={inputRange * 0.01} km={inputRange * 0.00001} />
+            return <RangeChoice mm={(inputRange * 0.1).toFixed(6)*1} sm={(inputRange * 1).toFixed(6)*1} m={(inputRange * 0.01).toFixed(6)*1} km={(inputRange * 0.00001).toFixed(6)*1} />
         } else if (selectRange === 'm'){
-            return <RangeChoice mm={inputRange * 1000} sm={inputRange * 100} m={inputRange * 1} km={inputRange * 0.001} />
+            return <RangeChoice mm={(inputRange * 1000).toFixed(6)*1} sm={(inputRange * 100).toFixed(6)*1} m={(inputRange * 1).toFixed(6)*1} km={(inputRange * 0.001).toFixed(6)*1} />
         } else if (selectRange === 'km'){
-            return <RangeChoice mm={inputRange * 1000000} sm={inputRange * 100000} m={inputRange * 1000} km={inputRange * 1} />
+            return <RangeChoice mm={(inputRange * 1000000).toFixed(6)*1} sm={(inputRange * 100000).toFixed(6)*1} m={(inputRange * 1000).toFixed(6)*1} km={(inputRange * 1).toFixed(6)*1} />
         }
     }
         return (

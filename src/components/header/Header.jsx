@@ -12,7 +12,9 @@ const Header = () => {
                 <li className="header__list-item">
                     <NavLink to="/range" className="header__link-item">Длина</NavLink>
                 </li>
-                <li className="header__list-item">Скорость</li>
+                <li className="header__list-item">
+                    <NavLink to="/pi" className="header__link-item">π после запятой</NavLink>
+                </li>
                 <li className="header__list-item">Напряжение</li>
             </ul>
         </header>
