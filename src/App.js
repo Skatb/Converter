@@ -1,6 +1,7 @@
 import Header from './components/header/Header'
 import Range from './components/range/Range'
 import Weight from './components/weight/Weight';
+import Pi from './components/pi/Pi';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/range" element={<Range />} />
             <Route path="/weight" element={<Weight />} />
+            <Route path="/pi" element={<Pi />} />
           </Routes>
         </div>
       </Router>
