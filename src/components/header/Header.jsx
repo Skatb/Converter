@@ -7,7 +7,7 @@ const Header = () => {
         <header className='header'>
             <ul className='header__list'>
                 <li className="header__list-item">
-                    <NavLink to="/weight" className="header__link-item">Вес</NavLink>
+                    <NavLink to="/weight" className="header__link-item">Масса</NavLink>
                 </li>
                 <li className="header__list-item">
                     <NavLink to="/range" className="header__link-item">Длина</NavLink>
