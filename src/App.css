@@ -1,6 +1,8 @@
+body {
+    background-color: teal;
+}
 .App {
     padding: 0 15px;
-    background-color: teal;
 }
 .wrapper {
     max-width: 800px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './range.css'
+import '../../UI/input.css'
 import RangeChoice from './selectRange/RangeChoice';
 
 const Range = () => {
@@ -20,15 +20,15 @@ const Range = () => {
         }
     }
         return (
-            <div className="range">
+            <div className="range calc-section">
                 <input
                     type="number"
                     maxLength="12"
-                    className="data"
+                    className="data input-style"
                     onChange={event => setInputRange(event.target.value)}
                     value={inputRange}
                 />
-                <select className="data-select"  value={selectRange} onChange={event => setRange(event.target.value)}>
+                <select className="data-select select-text"  value={selectRange} onChange={event => setRange(event.target.value)}>
                     <option value="mm" >Миллиметры</option>
                     <option value="cm">Сантиметры</option>
                     <option value="m">Метры</option>

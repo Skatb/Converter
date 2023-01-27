@@ -23,11 +23,10 @@ const Pi = () => {
                 <input 
                 maxLength="4"
                 type="text" 
-                className='pi-input' 
+                className='pi-input input-style' 
                 value={piInput}
                 onChange={e => setPi(e.target.value)}
                 />
-                
                 <div className='pi-number'>
                     <ul className="pi-list">
                         <li className="pi-item" onClick={piFunc}>1</li>

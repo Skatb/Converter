@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import WeightChoice from './selectWeight/WeightChoice';
-import './weight.css'
+import '../../UI/input.css'
 
 const Weight = () => {
     const [inputWeight, setInputWeight] = useState('0')
@@ -20,15 +20,15 @@ const Weight = () => {
         }
     }
         return (
-            <div className="Weight">
+            <div className="weight calc-section">
                 <input
-                    type="number"
+                    type="number data-input"
                     maxLength="12"
-                    className="data"
+                    className="data input-style" 
                     onChange={event => setInputWeight(event.target.value)}
                     value={inputWeight}
                 />
-                <select className="data-select"  value={selectWeight} onChange={event => setWeight(event.target.value)}>
+                <select className="data-select select-text"  value={selectWeight} onChange={event => setWeight(event.target.value)}>
                     <option value="mg" >Миллиграммы</option>
                     <option value="g">Граммы</option>
                     <option value="kg">Килограммы</option>

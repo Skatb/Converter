@@ -13,9 +13,8 @@ const Header = () => {
                     <NavLink to="/range" className="header__link-item">Длина</NavLink>
                 </li>
                 <li className="header__list-item">
-                    <NavLink to="/pi" className="header__link-item">π после запятой</NavLink>
+                    <NavLink to="/pi" className="header__link-item">Пи после запятой</NavLink>
                 </li>
-                <li className="header__list-item">Напряжение</li>
             </ul>
         </header>
     );
