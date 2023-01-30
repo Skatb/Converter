@@ -5,9 +5,14 @@
 }
 
 .input-style {
-    padding: 5px;
+    padding: 10px 5px 10px 20px;
     font-size: 18px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 0px 0px;
+    background-color: #505c68;
+    color: #fffffd;
+    outline: none;
+    border: none;
+    border-radius: 15px;
 }
 .select-text {
     font-size: 18px;
