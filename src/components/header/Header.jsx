@@ -15,6 +15,9 @@ const Header = () => {
                 <li className="header__list-item">
                     <NavLink to="/pi" className="header__link-item">Пи после запятой</NavLink>
                 </li>
+                <li className="header__list-item">
+                    <NavLink to="/volume" className="header__link-item">Объем</NavLink>
+                </li>
             </ul>
         </header>
     );

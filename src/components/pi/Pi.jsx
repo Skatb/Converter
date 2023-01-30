@@ -10,7 +10,6 @@ const Pi = () => {
     const piFunc = e => {
         setPi(piInput+e.target.innerHTML)
     }
-
     const piBackSpace = () => {
         setPi(piInput.split('').slice(0, -1).join(''))
     }

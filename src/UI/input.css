@@ -7,7 +7,7 @@
 .input-style {
     padding: 10px 5px 10px 20px;
     font-size: 18px;
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0px 15px 0px;
     background-color: #505c68;
     color: #fffffd;
     outline: none;
@@ -19,9 +19,10 @@
     line-height: 1.5;
     padding: 5px;
     margin-bottom: 10px;
+    width: 244px;
 }
 .convert-data {
-    font-size: 18px;
+    font-size: 26px;
     letter-spacing: 2px;
     padding-bottom: 5px;
 }
