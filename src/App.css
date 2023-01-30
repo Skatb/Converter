@@ -1,10 +1,10 @@
-body {
-    background-color: teal;
-}
 .App {
     padding: 0 15px;
 }
 .wrapper {
-    max-width: 800px;
     margin: 0 auto;
+    max-width: 800px;
+    background-color: rgb(62, 75, 92);
+    border-radius: 15px;
+    min-height: 100vh;
 }

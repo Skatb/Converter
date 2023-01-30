@@ -1,4 +1,5 @@
 .header {
+    border-bottom: 2px solid #3e4b5c;
 }
 .header__list {
     display: flex;
@@ -6,10 +7,11 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+    background-color: #363e49;
 }
 .header__link-item {
     font-size: 32px;
-    color: rgb(38, 35, 35);
+    color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 8px;
@@ -19,18 +21,4 @@
 }
 .header__link-item:hover {
     color: rgb(16, 14, 14);
-    background-color: rgb(216, 199, 199);
-}
-.header__link-item::after {
-    transition: all 0.5s ease 0s;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    background-color: #222222;
-    height: 1px;
-    width: 0px;
-}
-.header__link-item:hover::after {
-    width: 100%;
 }
