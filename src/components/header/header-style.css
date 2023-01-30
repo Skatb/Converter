@@ -1,9 +1,11 @@
 .header {
     border-bottom: 2px solid #3e4b5c;
+    
 }
 .header__list {
     display: flex;
     padding: 20px 15px;
+    border-radius: 15px;
     gap: 10px;
     align-items: center;
     justify-content: center;

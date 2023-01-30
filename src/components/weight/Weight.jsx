@@ -4,7 +4,7 @@ import WeightChoice from './selectWeight/WeightChoice';
 import '../../UI/input.css'
 
 const Weight = () => {
-    const [inputWeight, setInputWeight] = useState('0')
+    const [inputWeight, setInputWeight] = useState('1')
 
     const [selectWeight, setWeight] = useState('mg')
 
