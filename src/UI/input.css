@@ -1,7 +1,8 @@
 .calc-section {
     display: flex;
+    padding-left: 110px;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 .input-style {
